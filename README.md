@@ -6,26 +6,17 @@
 
 The easondrone_gazebo package.
 
-## Installation
-
-```bash
-cd ~/easondrone_ws/simulate
-git clone https://github.com/HuaYuXiao/easondrone_gazebo.git
-cd ~/easondrone_ws
-catkin_make --source simulate/easondrone_gazebo --build simulate/easondrone_gazebo/build
-```
-
 ## Launch
 
 ### Single drone
 
-```bash
+```sh
 roslaunch easondrone_gazebo simulation.launch
 ```
 
 ### Swarm drone
 
-```bash
+```sh
 roslaunch easondrone_gazebo multi_uav_mavros_sitl.launch
 ```
 
