@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<launch>
+    <include file="$(find px4)/launch/mavros_posix_sitl.launch">
+        <arg name="x" value="0" />
+        <arg name="y" value="0" />
+        <arg name="z" value="0.1" />
+        <arg name="Y" value="0" />
+        <arg name="world" default="$(find easondrone_gazebo)/worlds/indoor/easondrone.world"/>
+        <arg name="sdf" default="$(find easondrone_gazebo)/models/drone/iris_d435i_mid360/iris_d435i_mid360.sdf"/>
+        <arg name="gui" value="true"/>
+        <arg name="paused" value="false"/>
+    </include>
+
+    <node name="filter_pc" type="filter_pc" pkg="easondrone_mapping"/>
+
+    <include file="$(find easondrone_gazebo)/launch/transform.launch"/>
+
+    <node type="odom_visualization" pkg="odom_visualization" name="odom_visualization"/>
+</launch>
