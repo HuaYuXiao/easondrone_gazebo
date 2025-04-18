@@ -113,7 +113,7 @@
           <robotNamespace>camera</robotNamespace>
           <alwaysOn>true</alwaysOn>
           <updateRate>30</updateRate>
-          <imageTopicName>image_raw</imageTopicName>
+          <imageTopicName>image_rect_raw</imageTopicName>
           <cameraInfoTopicName>camera_info</cameraInfoTopicName>
           <frameName>realsense_camera_frame</frameName>
           <hackBaseline>0.12</hackBaseline>
