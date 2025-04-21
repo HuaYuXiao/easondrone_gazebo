@@ -173,7 +173,7 @@ Visualization Manager:
           Marker Topic: /odom_visualization/robot
           Name: Marker
           Namespaces:
-            mesh: true
+            {}
           Queue Size: 100
           Value: true
       Enabled: true
@@ -345,8 +345,8 @@ Visualization Manager:
             - Alpha: 0.30000001192092896
               Autocompute Intensity Bounds: true
               Autocompute Value Bounds:
-                Max Value: 3.4796721935272217
-                Min Value: -0.02443733811378479
+                Max Value: 20.433454513549805
+                Min Value: 0.7002744674682617
                 Value: true
               Axis: Z
               Channel Name: intensity
@@ -393,7 +393,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 13.62486457824707
+      Distance: 18.262985229492188
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
@@ -401,17 +401,17 @@ Visualization Manager:
         Value: false
       Field of View: 0.7853981852531433
       Focal Point:
-        X: 0.005263702943921089
-        Y: 1.3101428747177124
-        Z: 1.6219030618667603
+        X: -0.1982984095811844
+        Y: -0.1738394945859909
+        Z: 1.1927688121795654
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.6950001120567322
+      Pitch: 0.36500003933906555
       Target Frame: world
-      Yaw: 1.5600003004074097
+      Yaw: 3.1299993991851807
     Saved: ~
 Window Geometry:
   Displays:
