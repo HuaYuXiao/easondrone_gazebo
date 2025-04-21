@@ -8,7 +8,7 @@
         <arg name="y" value="0" />
         <arg name="z" value="0.1" />
         <arg name="Y" value="0" />
-        <arg name="world" default="$(arg world)"/>]
+        <arg name="world" default="$(arg world)"/>
         <arg name="sdf" default="$(arg sdf)"/>
         <arg name="gui" value="true"/>
         <arg name="paused" value="false"/>
