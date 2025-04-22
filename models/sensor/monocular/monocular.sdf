@@ -70,9 +70,9 @@
             </lens>
           </camera>
 
-          <always_on>1</always_on> <!--bool值，定义传感器是否更新，1为true,即传感器会根据update_rate参数定义的频率更新-->
+          <always_on>true</always_on> <!--bool值，定义传感器是否会根据update_rate参数定义的频率更新-->
           <update_rate>30</update_rate> <!--更新频率参数，默认值为0-->
-          <visualize>1</visualize> <!--传感器可视化参数，bool变量，1即为true,表示允许传感器在图形界面被观察到-->
+          <visualize>false</visualize> <!--传感器可视化参数，bool变量-->
          
           <!--插件标签，它可以作为world、model、sensor的子元素-->
           <!--插入一个名为camere_plugin的libgazebo_ros_camera.so插件，此插件的作用是关联摄像头-->
