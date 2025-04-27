@@ -1,6 +1,9 @@
 <?xml version="1.0"?>
 <launch>
-    <include file="$(find easondrone_gazebo)/launch/spawn_iris.launch"/>
+    <include file="$(find easondrone_gazebo)/launch/spawn_iris.launch">
+        <arg name="world" value="$(find aws_robomaker_bookstore_world)/worlds/bookstore.world"/>
+        <arg name="sdf" value="$(find easondrone_gazebo)/models/drone/iris_d435i_mid360/iris_d435i_mid360.sdf"/>
+    </include>
 
     <include file="$(find px4ctrl)/launch/px4ctrl.launch"/>
 
