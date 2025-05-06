@@ -6,15 +6,13 @@
     <include file="$(find px4)/launch/mavros_posix_sitl.launch">
         <arg name="x" value="0" />
         <arg name="y" value="0" />
-        <arg name="z" value="0.1" />
+        <arg name="z" value="0.05" />
         <arg name="Y" value="0" />
         <arg name="world" default="$(arg world)"/>
         <arg name="sdf" default="$(arg sdf)"/>
         <arg name="gui" value="true"/>
         <arg name="paused" value="false"/>
     </include>
-
-    <node name="filter_pc" type="filter_pc" pkg="easondrone_mapping"/>
 
     <include file="$(find easondrone_gazebo)/launch/transform.launch"/>
 
